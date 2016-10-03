@@ -1,6 +1,6 @@
 /**
  * State-based routing for AngularJS
- * @version v0.2.18
+ * @version v0.2.18-dev-2016-10-03
  * @link http://angular-ui.github.com/
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
@@ -2023,7 +2023,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
     var baseHref = $browser.baseHref(), location = $location.url(), lastPushedUrl;
 
     function appendBasePath(url, isHtml5, absolute) {
-      if (baseHref === '/') return url;
+      if (baseHref === '/a') return url;
       if (isHtml5) return baseHref.slice(0, -1) + url;
       if (absolute) return baseHref.slice(1) + url;
       return url;
